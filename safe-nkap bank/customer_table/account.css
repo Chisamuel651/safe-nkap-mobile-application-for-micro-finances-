@@ -1,0 +1,204 @@
+        section {
+            position: relative;
+            width: 100%;
+            height: 20vh;
+            overflow: hidden;
+            /* #3586ff */
+        }
+
+        section h1 {
+            position: absolute;
+            top: 60px;
+            left: 16px;
+        }
+
+        section .wave {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100px;
+            /* margin-left: 20px; */
+            background: url(../IMAGES/image_payment/wave.png);
+            background-size: 1000px 100px;
+            transform: rotateX(180deg);
+        }
+
+        section .wave.wave1 {
+            animation: animate 30s linear infinite;
+            z-index: 1000;
+            opacity: 0.7;
+            animation-delay: 0s;
+            top: 0;
+        }
+
+        section .wave.wave2 {
+            animation: animate2 15s linear infinite;
+            z-index: 999;
+            opacity: 0.5;
+            animation-delay: -5s;
+            top: -10px;
+        }
+
+        section .wave.wave3 {
+            animation: animate 30s linear infinite;
+            z-index: 998;
+            opacity: 0.2;
+            animation-delay: 0s;
+            top: -13px;
+        }
+
+        section .wave.wave4 {
+            animation: animate2 15s linear infinite;
+            z-index: 997;
+            opacity: 0.7;
+            animation-delay: -5s;
+            top: -19px;
+        }
+
+        @keyframes animate {
+            0% {
+                background-position-x: 0;
+            }
+
+            100% {
+                background-position-x: 1000px;
+            }
+        }
+
+        .container-x {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            /* #3586ff */
+        }
+
+        section h1 {
+            position: absolute;
+            top: 60px;
+            left: 16px;
+        }
+
+        section .wave {
+            margin-top: -20px;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100px;
+            /* margin-left: 20px; */
+            background: url(../IMAGES/image_payment/wave.png);
+            background-size: 1000px 100px;
+            transform: rotateX(180deg);
+        }
+
+        section .wave.wave1 {
+            animation: animate 30s linear infinite;
+            z-index: 1000;
+            opacity: 0.7;
+            animation-delay: 0s;
+            top: 0;
+        }
+
+        section .wave.wave2 {
+            animation: animate2 15s linear infinite;
+            z-index: 999;
+            opacity: 0.5;
+            animation-delay: -5s;
+            top: -10px;
+        }
+
+        section .wave.wave3 {
+            animation: animate 30s linear infinite;
+            z-index: 998;
+            opacity: 0.2;
+            animation-delay: 0s;
+            top: -13px;
+        }
+
+        section .wave.wave4 {
+            animation: animate2 15s linear infinite;
+            z-index: 997;
+            opacity: 0.7;
+            animation-delay: -5s;
+            top: -19px;
+        }
+
+        @keyframes animate {
+            0% {
+                background-position-x: 0;
+            }
+
+            100% {
+                background-position-x: 1000px;
+            }
+        }
+
+        @keyframes animate2 {
+            0% {
+                background-position-x: 0;
+            }
+
+            100% {
+                background-position-x: -1000px;
+            }
+        }
+
+.recent_orders{
+    background: var(--color-white);
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: 15px 30px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    display: flex;
+    margin-bottom: -22px;
+}
+
+.recent_orders:hover{
+    box-shadow: none;
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.info{
+    flex: 0 0 60%;
+    max-width: 60%;
+    text-align: left;
+    /* background-color: red; */
+}
+
+.details{
+    flex: 0 0 25%;
+    max-width: 25%;
+    margin-top: 18px;
+}
+
+.link{
+    flex: 0 0 15%;
+    max-width: 15%;
+    text-align: right;
+    /* margin-top: 14px; */
+}
+
+.link i{
+    font-size: 24px;
+}
+
+.transaction .info{
+        flex: 0 0 85%;
+    max-width: 85%;
+}
+
+
+    main table tbody td {
+        height: 2.8rem;
+        border-bottom: 1px solid var(--color-light);
+        color: var(--color-dark-variant);
+        width: calc(100%/2);
+        font-size: 11px;
+    }

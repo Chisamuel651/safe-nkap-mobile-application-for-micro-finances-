@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,600;1,800&family=Secular+One&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Secular One', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    text-transform: capitalize;
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+
+::-webkit-scrollbar{
+    width: 3px;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #ddd;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #ccc;
+}
+
+.wrapper{
+    width: 370px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid lightgray;
+    border-top: 0px;
+}
+
+.wrapper .title{
+    /* background: #007bff; */
+    color: #fff;
+    font-size: 20px;
+    line-height: 60px;
+    text-align: center;
+    /* border-bottom: 1px solid #006fe6; */
+    border-radius: 5px 5px 0 0;
+}
+
+.wrapper .form{
+    padding: 20px 15px;
+    min-height: 400px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.wrapper .form .inbox{
+    width: 100%;
+    align-items: baseline;
+    display: flex;
+}
+
+.wrapper .form .inbox .icon{
+    height: 40px;
+    width: 40px;
+    /* background-color: #006fe6; */
+    color: #fff;
+    align-items: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+
+
+.wrapper .form .inbox .msg_header{
+    max-width: 53%;
+    margin-left: 10px;
+    /* background-color: red; */
+}
+
+.wrapper .form .inbox .msg_header p{
+    color: #fff;
+    /* background-color: #006fe6; */
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 8px 10px;
+    word-break: break-all;
+}
+
+.wrapper .form .user_inbox{
+    justify-content: flex-end;
+    margin: 13px 0;
+}
+
+.wrapper .form .user_inbox .msg_header p{
+    color: #333;
+    background-color: #efefef;
+
+}
+
+.wrapper .typing_field{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    background-color: #efefef;
+    border-top: 1px solid #d9d9d9;
+    border-radius: 0 0 5px 5px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.wrapper .typing_field .input_data{
+    height: 40px;
+    width: 335px;
+    position: relative;
+}
+
+.wrapper .typing_field .input_data input{
+    height: 100%;
+    width: 100%;
+    padding: 0 80px 0 15px;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    font-size: 15px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.input_data input::placeholder{
+    color: #999999;
+    transition: all 0.3s ease;
+}
+
+.input_data input:focus::placeholder{
+    color: #bfbfbf;
+}
+
+
+
+.wrapper .typing_field .input_data button{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 30px;
+    width: 64px;
+    /* border: 1px solid #006fe6; */
+    /* background: #006fe6; */
+    color: #fff;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+
+
+.typing_field .input_data input:valid ~ button{
+    opacity: 1;
+    pointer-events: auto;
+}
